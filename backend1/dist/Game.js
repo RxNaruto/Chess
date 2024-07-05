@@ -32,7 +32,6 @@ class Game {
         }
         try {
             this.board.move(move);
-            this.moveCount++;
         }
         catch (e) {
             return;
@@ -64,6 +63,7 @@ class Game {
                 payload: move
             }));
         }
+        this.moveCount++;
     }
 }
 exports.Game = Game;

@@ -9,7 +9,7 @@ export const useSocket=()=>{
         const ws = new WebSocket(WS_URL);
         ws.onopen=()=>{
             console.log("connected");
-            setSocket(socket);
+            setSocket(ws);
 
         }
         ws.onclose=()=>{
