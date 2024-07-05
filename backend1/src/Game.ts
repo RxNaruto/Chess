@@ -43,7 +43,7 @@ export class Game{
         }
         try{
             this.board.move(move);
-            this.moveCount++;
+            
         }catch(e){
             return;
            
@@ -79,6 +79,7 @@ export class Game{
 
             }))
         }
+        this.moveCount++;
            
         
 
